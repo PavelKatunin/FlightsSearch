@@ -1,0 +1,1063 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		760A889721DBEA42001D0C4C /* Array+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760A889521DBEA41001D0C4C /* Array+Constraints.swift */; };
+		760A889821DBEA42001D0C4C /* NSLayoutConstraint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760A889621DBEA41001D0C4C /* NSLayoutConstraint+Extensions.swift */; };
+		760A889B21DBF793001D0C4C /* HoursMinutesFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760A889A21DBF793001D0C4C /* HoursMinutesFormatter.swift */; };
+		760A889E21DC0134001D0C4C /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760A889D21DC0134001D0C4C /* PriceView.swift */; };
+		760A88A121DC0245001D0C4C /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760A88A021DC0245001D0C4C /* RatingView.swift */; };
+		760A88A321DCF0DB001D0C4C /* UIStackView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760A88A221DCF0DB001D0C4C /* UIStackView+Helpers.swift */; };
+		760A88A521DD3BF9001D0C4C /* UITabBarController+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760A88A421DD3BF9001D0C4C /* UITabBarController+Helpers.swift */; };
+		760E355D21DE011600825661 /* FlightsPoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760E355C21DE011600825661 /* FlightsPoller.swift */; };
+		760E355F21DE02A200825661 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760E355E21DE02A200825661 /* UIView+Shadow.swift */; };
+		760E356321DE7DCD00825661 /* HoursMinutesFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760E356221DE7DCD00825661 /* HoursMinutesFormatterTests.swift */; };
+		760E356621DE7E3A00825661 /* PricingResponseParserJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760E356521DE7E3A00825661 /* PricingResponseParserJSONTests.swift */; };
+		760E356A21DE816900825661 /* AsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760E356921DE816900825661 /* AsynchronousOperation.swift */; };
+		760E356D21DE8EA500825661 /* successPrices.json in Resources */ = {isa = PBXBuildFile; fileRef = 760E356C21DE8EA500825661 /* successPrices.json */; };
+		760E356F21DE937300825661 /* Date+Weekdays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760E356E21DE937300825661 /* Date+Weekdays.swift */; };
+		7620D6D321DB9EE9006F5807 /* ItinerariesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620D6CD21DB9EE9006F5807 /* ItinerariesListPresenter.swift */; };
+		7620D6D421DB9EE9006F5807 /* ItinerariesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620D6CE21DB9EE9006F5807 /* ItinerariesListRouter.swift */; };
+		7620D6D521DB9EE9006F5807 /* ItinerariesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620D6CF21DB9EE9006F5807 /* ItinerariesListViewController.swift */; };
+		7620D6D621DB9EE9006F5807 /* ItinerariesListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620D6D021DB9EE9006F5807 /* ItinerariesListProtocols.swift */; };
+		7620D6DB21DBA33D006F5807 /* ItinerarieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620D6DA21DBA33D006F5807 /* ItinerarieCell.swift */; };
+		7620D6E221DBA3D6006F5807 /* SearchFlightsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620D6DC21DBA3D6006F5807 /* SearchFlightsPresenter.swift */; };
+		7620D6E321DBA3D6006F5807 /* SearchFlightsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620D6DD21DBA3D6006F5807 /* SearchFlightsRouter.swift */; };
+		7620D6E421DBA3D6006F5807 /* SearchFlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620D6DE21DBA3D6006F5807 /* SearchFlightsViewController.swift */; };
+		7620D6E521DBA3D6006F5807 /* SearchFlightsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620D6DF21DBA3D6006F5807 /* SearchFlightsProtocols.swift */; };
+		7620D6EA21DBA7E8006F5807 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620D6E921DBA7E8006F5807 /* UIView+Constraints.swift */; };
+		7620D6EC21DBA948006F5807 /* SkyScannerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620D6EB21DBA948006F5807 /* SkyScannerStyle.swift */; };
+		7620D6F321DBC03D006F5807 /* LegPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620D6ED21DBC03D006F5807 /* LegPresenter.swift */; };
+		7620D6F421DBC03D006F5807 /* LegRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620D6EE21DBC03D006F5807 /* LegRouter.swift */; };
+		7620D6F521DBC03D006F5807 /* LegProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620D6EF21DBC03D006F5807 /* LegProtocols.swift */; };
+		7620D6F721DBC03D006F5807 /* LegView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620D6F121DBC03D006F5807 /* LegView.swift */; };
+		7622B02A21D76B66003BF0E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B02921D76B66003BF0E7 /* AppDelegate.swift */; };
+		7622B03421D76B67003BF0E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7622B03221D76B67003BF0E7 /* LaunchScreen.storyboard */; };
+		7622B03F21D76B67003BF0E7 /* SkyScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B03E21D76B67003BF0E7 /* SkyScannerTests.swift */; };
+		7622B04A21D76B67003BF0E7 /* SkyScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B04921D76B67003BF0E7 /* SkyScannerUITests.swift */; };
+		7622B06121D76CA1003BF0E7 /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B06021D76CA1003BF0E7 /* HTTPService.swift */; };
+		7622B06321D76CD4003BF0E7 /* HTTPServiceRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B06221D76CD4003BF0E7 /* HTTPServiceRemote.swift */; };
+		7622B06821D76D89003BF0E7 /* FlightRequestTasksBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B06721D76D89003BF0E7 /* FlightRequestTasksBuilder.swift */; };
+		7622B06B21D76DAA003BF0E7 /* FlightsServiceRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B06A21D76DAA003BF0E7 /* FlightsServiceRemote.swift */; };
+		7622B07321D76F36003BF0E7 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B07221D76F36003BF0E7 /* Result.swift */; };
+		7622B07921D76FA6003BF0E7 /* URL+HTTPParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B07621D76FA6003BF0E7 /* URL+HTTPParameters.swift */; };
+		7622B07A21D76FA6003BF0E7 /* URLRequest+Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B07721D76FA6003BF0E7 /* URLRequest+Headers.swift */; };
+		7622B07F21D783DF003BF0E7 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B07E21D783DF003BF0E7 /* Environment.swift */; };
+		7622B08121D784A1003BF0E7 /* EnvironmentProduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B08021D784A1003BF0E7 /* EnvironmentProduction.swift */; };
+		7622B08321D7850A003BF0E7 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B08221D7850A003BF0E7 /* Services.swift */; };
+		7622B08621D78568003BF0E7 /* GlobalServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B08521D78568003BF0E7 /* GlobalServices.swift */; };
+		7622B08821D788ED003BF0E7 /* Dictionary+HTTPParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B08721D788ED003BF0E7 /* Dictionary+HTTPParameters.swift */; };
+		7622B08A21D78B9A003BF0E7 /* Itinerarie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B08921D78B9A003BF0E7 /* Itinerarie.swift */; };
+		7622B08F21D78BEF003BF0E7 /* Leg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B08E21D78BEF003BF0E7 /* Leg.swift */; };
+		7622B09621D915F9003BF0E7 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B09521D915F9003BF0E7 /* Segment.swift */; };
+		7622B09921D9167E003BF0E7 /* PricingResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B09821D9167E003BF0E7 /* PricingResponseParser.swift */; };
+		7622B09B21D916D9003BF0E7 /* PricingResponseParserJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B09A21D916D9003BF0E7 /* PricingResponseParserJSON.swift */; };
+		7622B09D21D965AC003BF0E7 /* String+Lowercasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B09C21D965AC003BF0E7 /* String+Lowercasing.swift */; };
+		7622B0A021D97134003BF0E7 /* RawResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B09F21D97134003BF0E7 /* RawResponses.swift */; };
+		7622B0A721DA21B6003BF0E7 /* ItinerariePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B0A121DA21B6003BF0E7 /* ItinerariePresenter.swift */; };
+		7622B0A821DA21B6003BF0E7 /* ItinerarieRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B0A221DA21B6003BF0E7 /* ItinerarieRouter.swift */; };
+		7622B0A921DA21B6003BF0E7 /* ItinerarieProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B0A321DA21B6003BF0E7 /* ItinerarieProtocols.swift */; };
+		7622B0AB21DA21B6003BF0E7 /* ItinerarieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B0A521DA21B6003BF0E7 /* ItinerarieView.swift */; };
+		7622B0AE21DA2234003BF0E7 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B0AD21DA2234003BF0E7 /* Style.swift */; };
+		7622B0B021DA53A9003BF0E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7622B0AF21DA53A9003BF0E7 /* Assets.xcassets */; };
+		7622B0B221DA5482003BF0E7 /* MVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622B0B121DA5481003BF0E7 /* MVP.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7622B03B21D76B67003BF0E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7622B01E21D76B66003BF0E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7622B02521D76B66003BF0E7;
+			remoteInfo = SkyScanner;
+		};
+		7622B04621D76B67003BF0E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7622B01E21D76B66003BF0E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7622B02521D76B66003BF0E7;
+			remoteInfo = SkyScanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		760A889521DBEA41001D0C4C /* Array+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Constraints.swift"; sourceTree = "<group>"; };
+		760A889621DBEA41001D0C4C /* NSLayoutConstraint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Extensions.swift"; sourceTree = "<group>"; };
+		760A889A21DBF793001D0C4C /* HoursMinutesFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursMinutesFormatter.swift; sourceTree = "<group>"; };
+		760A889D21DC0134001D0C4C /* PriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
+		760A88A021DC0245001D0C4C /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		760A88A221DCF0DB001D0C4C /* UIStackView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Helpers.swift"; sourceTree = "<group>"; };
+		760A88A421DD3BF9001D0C4C /* UITabBarController+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarController+Helpers.swift"; sourceTree = "<group>"; };
+		760E355C21DE011600825661 /* FlightsPoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsPoller.swift; sourceTree = "<group>"; };
+		760E355E21DE02A200825661 /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
+		760E356221DE7DCD00825661 /* HoursMinutesFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursMinutesFormatterTests.swift; sourceTree = "<group>"; };
+		760E356521DE7E3A00825661 /* PricingResponseParserJSONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricingResponseParserJSONTests.swift; sourceTree = "<group>"; };
+		760E356921DE816900825661 /* AsynchronousOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsynchronousOperation.swift; sourceTree = "<group>"; };
+		760E356C21DE8EA500825661 /* successPrices.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = successPrices.json; sourceTree = "<group>"; };
+		760E356E21DE937300825661 /* Date+Weekdays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Weekdays.swift"; sourceTree = "<group>"; };
+		7620D6CD21DB9EE9006F5807 /* ItinerariesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinerariesListPresenter.swift; sourceTree = "<group>"; };
+		7620D6CE21DB9EE9006F5807 /* ItinerariesListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinerariesListRouter.swift; sourceTree = "<group>"; };
+		7620D6CF21DB9EE9006F5807 /* ItinerariesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinerariesListViewController.swift; sourceTree = "<group>"; };
+		7620D6D021DB9EE9006F5807 /* ItinerariesListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinerariesListProtocols.swift; sourceTree = "<group>"; };
+		7620D6DA21DBA33D006F5807 /* ItinerarieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinerarieCell.swift; sourceTree = "<group>"; };
+		7620D6DC21DBA3D6006F5807 /* SearchFlightsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightsPresenter.swift; sourceTree = "<group>"; };
+		7620D6DD21DBA3D6006F5807 /* SearchFlightsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightsRouter.swift; sourceTree = "<group>"; };
+		7620D6DE21DBA3D6006F5807 /* SearchFlightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightsViewController.swift; sourceTree = "<group>"; };
+		7620D6DF21DBA3D6006F5807 /* SearchFlightsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightsProtocols.swift; sourceTree = "<group>"; };
+		7620D6E921DBA7E8006F5807 /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		7620D6EB21DBA948006F5807 /* SkyScannerStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyScannerStyle.swift; sourceTree = "<group>"; };
+		7620D6ED21DBC03D006F5807 /* LegPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegPresenter.swift; sourceTree = "<group>"; };
+		7620D6EE21DBC03D006F5807 /* LegRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegRouter.swift; sourceTree = "<group>"; };
+		7620D6EF21DBC03D006F5807 /* LegProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegProtocols.swift; sourceTree = "<group>"; };
+		7620D6F121DBC03D006F5807 /* LegView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegView.swift; sourceTree = "<group>"; };
+		7622B02621D76B66003BF0E7 /* SkyScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7622B02921D76B66003BF0E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7622B03321D76B67003BF0E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7622B03521D76B67003BF0E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7622B03A21D76B67003BF0E7 /* SkyScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7622B03E21D76B67003BF0E7 /* SkyScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyScannerTests.swift; sourceTree = "<group>"; };
+		7622B04021D76B67003BF0E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7622B04521D76B67003BF0E7 /* SkyScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyScannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7622B04921D76B67003BF0E7 /* SkyScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyScannerUITests.swift; sourceTree = "<group>"; };
+		7622B04B21D76B67003BF0E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7622B06021D76CA1003BF0E7 /* HTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
+		7622B06221D76CD4003BF0E7 /* HTTPServiceRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPServiceRemote.swift; sourceTree = "<group>"; };
+		7622B06721D76D89003BF0E7 /* FlightRequestTasksBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRequestTasksBuilder.swift; sourceTree = "<group>"; };
+		7622B06A21D76DAA003BF0E7 /* FlightsServiceRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsServiceRemote.swift; sourceTree = "<group>"; };
+		7622B07221D76F36003BF0E7 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		7622B07621D76FA6003BF0E7 /* URL+HTTPParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+HTTPParameters.swift"; sourceTree = "<group>"; };
+		7622B07721D76FA6003BF0E7 /* URLRequest+Headers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+Headers.swift"; sourceTree = "<group>"; };
+		7622B07E21D783DF003BF0E7 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		7622B08021D784A1003BF0E7 /* EnvironmentProduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentProduction.swift; sourceTree = "<group>"; };
+		7622B08221D7850A003BF0E7 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		7622B08521D78568003BF0E7 /* GlobalServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalServices.swift; sourceTree = "<group>"; };
+		7622B08721D788ED003BF0E7 /* Dictionary+HTTPParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+HTTPParameters.swift"; sourceTree = "<group>"; };
+		7622B08921D78B9A003BF0E7 /* Itinerarie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Itinerarie.swift; sourceTree = "<group>"; };
+		7622B08E21D78BEF003BF0E7 /* Leg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leg.swift; sourceTree = "<group>"; };
+		7622B09521D915F9003BF0E7 /* Segment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
+		7622B09821D9167E003BF0E7 /* PricingResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricingResponseParser.swift; sourceTree = "<group>"; };
+		7622B09A21D916D9003BF0E7 /* PricingResponseParserJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricingResponseParserJSON.swift; sourceTree = "<group>"; };
+		7622B09C21D965AC003BF0E7 /* String+Lowercasing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Lowercasing.swift"; sourceTree = "<group>"; };
+		7622B09F21D97134003BF0E7 /* RawResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawResponses.swift; sourceTree = "<group>"; };
+		7622B0A121DA21B6003BF0E7 /* ItinerariePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinerariePresenter.swift; sourceTree = "<group>"; };
+		7622B0A221DA21B6003BF0E7 /* ItinerarieRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinerarieRouter.swift; sourceTree = "<group>"; };
+		7622B0A321DA21B6003BF0E7 /* ItinerarieProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinerarieProtocols.swift; sourceTree = "<group>"; };
+		7622B0A521DA21B6003BF0E7 /* ItinerarieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinerarieView.swift; sourceTree = "<group>"; };
+		7622B0AD21DA2234003BF0E7 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		7622B0AF21DA53A9003BF0E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7622B0B121DA5481003BF0E7 /* MVP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7622B02321D76B66003BF0E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7622B03721D76B67003BF0E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7622B04221D76B67003BF0E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		760A889921DBF778001D0C4C /* HoursMinutesFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				760A889A21DBF793001D0C4C /* HoursMinutesFormatter.swift */,
+			);
+			path = HoursMinutesFormatter;
+			sourceTree = "<group>";
+		};
+		760A889C21DBFE6A001D0C4C /* Price */ = {
+			isa = PBXGroup;
+			children = (
+				760A889D21DC0134001D0C4C /* PriceView.swift */,
+			);
+			path = Price;
+			sourceTree = "<group>";
+		};
+		760A889F21DC0239001D0C4C /* Rating */ = {
+			isa = PBXGroup;
+			children = (
+				760A88A021DC0245001D0C4C /* RatingView.swift */,
+			);
+			path = Rating;
+			sourceTree = "<group>";
+		};
+		760E355B21DE010200825661 /* FlightsPoller */ = {
+			isa = PBXGroup;
+			children = (
+				760E355C21DE011600825661 /* FlightsPoller.swift */,
+			);
+			path = FlightsPoller;
+			sourceTree = "<group>";
+		};
+		760E356021DE7DA800825661 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				760E356121DE7DB800825661 /* HoursMinutesFormatter */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		760E356121DE7DB800825661 /* HoursMinutesFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				760E356221DE7DCD00825661 /* HoursMinutesFormatterTests.swift */,
+			);
+			path = HoursMinutesFormatter;
+			sourceTree = "<group>";
+		};
+		760E356421DE7E2300825661 /* PricingResponseParser */ = {
+			isa = PBXGroup;
+			children = (
+				760E356521DE7E3A00825661 /* PricingResponseParserJSONTests.swift */,
+			);
+			path = PricingResponseParser;
+			sourceTree = "<group>";
+		};
+		760E356721DE7F6F00825661 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		760E356821DE815900825661 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				760E356921DE816900825661 /* AsynchronousOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		760E356B21DE8E2C00825661 /* TestResources */ = {
+			isa = PBXGroup;
+			children = (
+				760E356C21DE8EA500825661 /* successPrices.json */,
+			);
+			path = TestResources;
+			sourceTree = "<group>";
+		};
+		7620D6D921DBA319006F5807 /* ItinerarieCell */ = {
+			isa = PBXGroup;
+			children = (
+				7620D6DA21DBA33D006F5807 /* ItinerarieCell.swift */,
+			);
+			path = ItinerarieCell;
+			sourceTree = "<group>";
+		};
+		7620D6E821DBA7D6006F5807 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				760A889521DBEA41001D0C4C /* Array+Constraints.swift */,
+				760A889621DBEA41001D0C4C /* NSLayoutConstraint+Extensions.swift */,
+				7620D6E921DBA7E8006F5807 /* UIView+Constraints.swift */,
+				760A88A221DCF0DB001D0C4C /* UIStackView+Helpers.swift */,
+				760A88A421DD3BF9001D0C4C /* UITabBarController+Helpers.swift */,
+				760E355E21DE02A200825661 /* UIView+Shadow.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		7622B01D21D76B66003BF0E7 = {
+			isa = PBXGroup;
+			children = (
+				7622B02821D76B66003BF0E7 /* SkyScanner */,
+				7622B03D21D76B67003BF0E7 /* SkyScannerTests */,
+				7622B04821D76B67003BF0E7 /* SkyScannerUITests */,
+				7622B02721D76B66003BF0E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7622B02721D76B66003BF0E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7622B02621D76B66003BF0E7 /* SkyScanner.app */,
+				7622B03A21D76B67003BF0E7 /* SkyScannerTests.xctest */,
+				7622B04521D76B67003BF0E7 /* SkyScannerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7622B02821D76B66003BF0E7 /* SkyScanner */ = {
+			isa = PBXGroup;
+			children = (
+				7622B0AF21DA53A9003BF0E7 /* Assets.xcassets */,
+				7622B06F21D76E8B003BF0E7 /* Common */,
+				7622B05921D76B83003BF0E7 /* Services */,
+				7622B05821D76B7D003BF0E7 /* Entities */,
+				7622B05721D76B78003BF0E7 /* Modules */,
+				7622B02921D76B66003BF0E7 /* AppDelegate.swift */,
+				7622B03221D76B67003BF0E7 /* LaunchScreen.storyboard */,
+				7622B03521D76B67003BF0E7 /* Info.plist */,
+			);
+			path = SkyScanner;
+			sourceTree = "<group>";
+		};
+		7622B03D21D76B67003BF0E7 /* SkyScannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				760E356B21DE8E2C00825661 /* TestResources */,
+				760E356721DE7F6F00825661 /* Modules */,
+				760E356021DE7DA800825661 /* Common */,
+				7622B06C21D76E21003BF0E7 /* Services */,
+				7622B03E21D76B67003BF0E7 /* SkyScannerTests.swift */,
+				7622B04021D76B67003BF0E7 /* Info.plist */,
+			);
+			path = SkyScannerTests;
+			sourceTree = "<group>";
+		};
+		7622B04821D76B67003BF0E7 /* SkyScannerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7622B04921D76B67003BF0E7 /* SkyScannerUITests.swift */,
+				7622B04B21D76B67003BF0E7 /* Info.plist */,
+			);
+			path = SkyScannerUITests;
+			sourceTree = "<group>";
+		};
+		7622B05721D76B78003BF0E7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				760A889F21DC0239001D0C4C /* Rating */,
+				760A889C21DBFE6A001D0C4C /* Price */,
+				7620D6D921DBA319006F5807 /* ItinerarieCell */,
+				7622B07C21D77069003BF0E7 /* SearchFlights */,
+				7622B06521D76D3B003BF0E7 /* ItinerariesList */,
+				7622B06421D76D34003BF0E7 /* Itinerarie */,
+				7622B05F21D76C76003BF0E7 /* Leg */,
+				7622B0B121DA5481003BF0E7 /* MVP.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7622B05821D76B7D003BF0E7 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				7622B07121D76F29003BF0E7 /* Result */,
+				7622B05C21D76BB5003BF0E7 /* Segment */,
+				7622B05B21D76BA8003BF0E7 /* Leg */,
+				7622B05A21D76BA4003BF0E7 /* Itinerarie */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		7622B05921D76B83003BF0E7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7622B07D21D783B3003BF0E7 /* Environment */,
+				7622B06621D76D63003BF0E7 /* Flights */,
+				7622B05D21D76BBC003BF0E7 /* HTTP */,
+				7622B08221D7850A003BF0E7 /* Services.swift */,
+				7622B08521D78568003BF0E7 /* GlobalServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7622B05A21D76BA4003BF0E7 /* Itinerarie */ = {
+			isa = PBXGroup;
+			children = (
+				7622B08921D78B9A003BF0E7 /* Itinerarie.swift */,
+			);
+			path = Itinerarie;
+			sourceTree = "<group>";
+		};
+		7622B05B21D76BA8003BF0E7 /* Leg */ = {
+			isa = PBXGroup;
+			children = (
+				7622B08E21D78BEF003BF0E7 /* Leg.swift */,
+			);
+			path = Leg;
+			sourceTree = "<group>";
+		};
+		7622B05C21D76BB5003BF0E7 /* Segment */ = {
+			isa = PBXGroup;
+			children = (
+				7622B09521D915F9003BF0E7 /* Segment.swift */,
+			);
+			path = Segment;
+			sourceTree = "<group>";
+		};
+		7622B05D21D76BBC003BF0E7 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				7622B06021D76CA1003BF0E7 /* HTTPService.swift */,
+				7622B06221D76CD4003BF0E7 /* HTTPServiceRemote.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		7622B05F21D76C76003BF0E7 /* Leg */ = {
+			isa = PBXGroup;
+			children = (
+				7620D6ED21DBC03D006F5807 /* LegPresenter.swift */,
+				7620D6EE21DBC03D006F5807 /* LegRouter.swift */,
+				7620D6EF21DBC03D006F5807 /* LegProtocols.swift */,
+				7620D6F121DBC03D006F5807 /* LegView.swift */,
+			);
+			path = Leg;
+			sourceTree = "<group>";
+		};
+		7622B06421D76D34003BF0E7 /* Itinerarie */ = {
+			isa = PBXGroup;
+			children = (
+				7622B0A121DA21B6003BF0E7 /* ItinerariePresenter.swift */,
+				7622B0A221DA21B6003BF0E7 /* ItinerarieRouter.swift */,
+				7622B0A321DA21B6003BF0E7 /* ItinerarieProtocols.swift */,
+				7622B0A521DA21B6003BF0E7 /* ItinerarieView.swift */,
+			);
+			path = Itinerarie;
+			sourceTree = "<group>";
+		};
+		7622B06521D76D3B003BF0E7 /* ItinerariesList */ = {
+			isa = PBXGroup;
+			children = (
+				7620D6CD21DB9EE9006F5807 /* ItinerariesListPresenter.swift */,
+				7620D6CE21DB9EE9006F5807 /* ItinerariesListRouter.swift */,
+				7620D6CF21DB9EE9006F5807 /* ItinerariesListViewController.swift */,
+				7620D6D021DB9EE9006F5807 /* ItinerariesListProtocols.swift */,
+			);
+			path = ItinerariesList;
+			sourceTree = "<group>";
+		};
+		7622B06621D76D63003BF0E7 /* Flights */ = {
+			isa = PBXGroup;
+			children = (
+				760E355B21DE010200825661 /* FlightsPoller */,
+				7622B09721D91656003BF0E7 /* PricingResponseParser */,
+				7622B06721D76D89003BF0E7 /* FlightRequestTasksBuilder.swift */,
+				7622B06A21D76DAA003BF0E7 /* FlightsServiceRemote.swift */,
+			);
+			path = Flights;
+			sourceTree = "<group>";
+		};
+		7622B06C21D76E21003BF0E7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7622B06D21D76E2A003BF0E7 /* Flights */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7622B06D21D76E2A003BF0E7 /* Flights */ = {
+			isa = PBXGroup;
+			children = (
+				760E356421DE7E2300825661 /* PricingResponseParser */,
+			);
+			path = Flights;
+			sourceTree = "<group>";
+		};
+		7622B06F21D76E8B003BF0E7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				760E356821DE815900825661 /* Operations */,
+				760A889921DBF778001D0C4C /* HoursMinutesFormatter */,
+				7622B07421D76F52003BF0E7 /* Extensions */,
+				7622B07021D76E9A003BF0E7 /* Style */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7622B07021D76E9A003BF0E7 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				7622B0AD21DA2234003BF0E7 /* Style.swift */,
+				7620D6EB21DBA948006F5807 /* SkyScannerStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		7622B07121D76F29003BF0E7 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				7622B07221D76F36003BF0E7 /* Result.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		7622B07421D76F52003BF0E7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7620D6E821DBA7D6006F5807 /* UIKit */,
+				7622B07521D76F95003BF0E7 /* Foundation */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7622B07521D76F95003BF0E7 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				7622B08721D788ED003BF0E7 /* Dictionary+HTTPParameters.swift */,
+				7622B07621D76FA6003BF0E7 /* URL+HTTPParameters.swift */,
+				7622B07721D76FA6003BF0E7 /* URLRequest+Headers.swift */,
+				7622B09C21D965AC003BF0E7 /* String+Lowercasing.swift */,
+				760E356E21DE937300825661 /* Date+Weekdays.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		7622B07C21D77069003BF0E7 /* SearchFlights */ = {
+			isa = PBXGroup;
+			children = (
+				7620D6DC21DBA3D6006F5807 /* SearchFlightsPresenter.swift */,
+				7620D6DD21DBA3D6006F5807 /* SearchFlightsRouter.swift */,
+				7620D6DE21DBA3D6006F5807 /* SearchFlightsViewController.swift */,
+				7620D6DF21DBA3D6006F5807 /* SearchFlightsProtocols.swift */,
+			);
+			path = SearchFlights;
+			sourceTree = "<group>";
+		};
+		7622B07D21D783B3003BF0E7 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				7622B07E21D783DF003BF0E7 /* Environment.swift */,
+				7622B08021D784A1003BF0E7 /* EnvironmentProduction.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		7622B09721D91656003BF0E7 /* PricingResponseParser */ = {
+			isa = PBXGroup;
+			children = (
+				7622B09E21D97123003BF0E7 /* RawResponses */,
+				7622B09821D9167E003BF0E7 /* PricingResponseParser.swift */,
+				7622B09A21D916D9003BF0E7 /* PricingResponseParserJSON.swift */,
+			);
+			path = PricingResponseParser;
+			sourceTree = "<group>";
+		};
+		7622B09E21D97123003BF0E7 /* RawResponses */ = {
+			isa = PBXGroup;
+			children = (
+				7622B09F21D97134003BF0E7 /* RawResponses.swift */,
+			);
+			path = RawResponses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7622B02521D76B66003BF0E7 /* SkyScanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7622B04E21D76B67003BF0E7 /* Build configuration list for PBXNativeTarget "SkyScanner" */;
+			buildPhases = (
+				7622B02221D76B66003BF0E7 /* Sources */,
+				7622B02321D76B66003BF0E7 /* Frameworks */,
+				7622B02421D76B66003BF0E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkyScanner;
+			productName = SkyScanner;
+			productReference = 7622B02621D76B66003BF0E7 /* SkyScanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7622B03921D76B67003BF0E7 /* SkyScannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7622B05121D76B67003BF0E7 /* Build configuration list for PBXNativeTarget "SkyScannerTests" */;
+			buildPhases = (
+				7622B03621D76B67003BF0E7 /* Sources */,
+				7622B03721D76B67003BF0E7 /* Frameworks */,
+				7622B03821D76B67003BF0E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7622B03C21D76B67003BF0E7 /* PBXTargetDependency */,
+			);
+			name = SkyScannerTests;
+			productName = SkyScannerTests;
+			productReference = 7622B03A21D76B67003BF0E7 /* SkyScannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7622B04421D76B67003BF0E7 /* SkyScannerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7622B05421D76B67003BF0E7 /* Build configuration list for PBXNativeTarget "SkyScannerUITests" */;
+			buildPhases = (
+				7622B04121D76B67003BF0E7 /* Sources */,
+				7622B04221D76B67003BF0E7 /* Frameworks */,
+				7622B04321D76B67003BF0E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7622B04721D76B67003BF0E7 /* PBXTargetDependency */,
+			);
+			name = SkyScannerUITests;
+			productName = SkyScannerUITests;
+			productReference = 7622B04521D76B67003BF0E7 /* SkyScannerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7622B01E21D76B66003BF0E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = PavelKatunin;
+				TargetAttributes = {
+					7622B02521D76B66003BF0E7 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					7622B03921D76B67003BF0E7 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7622B02521D76B66003BF0E7;
+					};
+					7622B04421D76B67003BF0E7 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7622B02521D76B66003BF0E7;
+					};
+				};
+			};
+			buildConfigurationList = 7622B02121D76B66003BF0E7 /* Build configuration list for PBXProject "SkyScanner" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7622B01D21D76B66003BF0E7;
+			productRefGroup = 7622B02721D76B66003BF0E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7622B02521D76B66003BF0E7 /* SkyScanner */,
+				7622B03921D76B67003BF0E7 /* SkyScannerTests */,
+				7622B04421D76B67003BF0E7 /* SkyScannerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7622B02421D76B66003BF0E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7622B03421D76B67003BF0E7 /* LaunchScreen.storyboard in Resources */,
+				7622B0B021DA53A9003BF0E7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7622B03821D76B67003BF0E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760E356D21DE8EA500825661 /* successPrices.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7622B04321D76B67003BF0E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7622B02221D76B66003BF0E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7622B0A921DA21B6003BF0E7 /* ItinerarieProtocols.swift in Sources */,
+				7622B0A021D97134003BF0E7 /* RawResponses.swift in Sources */,
+				7620D6EA21DBA7E8006F5807 /* UIView+Constraints.swift in Sources */,
+				7622B08121D784A1003BF0E7 /* EnvironmentProduction.swift in Sources */,
+				7620D6D521DB9EE9006F5807 /* ItinerariesListViewController.swift in Sources */,
+				7622B08321D7850A003BF0E7 /* Services.swift in Sources */,
+				7622B06121D76CA1003BF0E7 /* HTTPService.swift in Sources */,
+				7620D6F321DBC03D006F5807 /* LegPresenter.swift in Sources */,
+				7620D6DB21DBA33D006F5807 /* ItinerarieCell.swift in Sources */,
+				760A889B21DBF793001D0C4C /* HoursMinutesFormatter.swift in Sources */,
+				7622B08A21D78B9A003BF0E7 /* Itinerarie.swift in Sources */,
+				7622B07A21D76FA6003BF0E7 /* URLRequest+Headers.swift in Sources */,
+				760E356F21DE937300825661 /* Date+Weekdays.swift in Sources */,
+				7620D6E521DBA3D6006F5807 /* SearchFlightsProtocols.swift in Sources */,
+				7622B02A21D76B66003BF0E7 /* AppDelegate.swift in Sources */,
+				760E356A21DE816900825661 /* AsynchronousOperation.swift in Sources */,
+				7622B06B21D76DAA003BF0E7 /* FlightsServiceRemote.swift in Sources */,
+				760A889E21DC0134001D0C4C /* PriceView.swift in Sources */,
+				7620D6F521DBC03D006F5807 /* LegProtocols.swift in Sources */,
+				7620D6D321DB9EE9006F5807 /* ItinerariesListPresenter.swift in Sources */,
+				760A88A121DC0245001D0C4C /* RatingView.swift in Sources */,
+				7622B0A821DA21B6003BF0E7 /* ItinerarieRouter.swift in Sources */,
+				7622B09D21D965AC003BF0E7 /* String+Lowercasing.swift in Sources */,
+				7620D6E321DBA3D6006F5807 /* SearchFlightsRouter.swift in Sources */,
+				760A889721DBEA42001D0C4C /* Array+Constraints.swift in Sources */,
+				760A889821DBEA42001D0C4C /* NSLayoutConstraint+Extensions.swift in Sources */,
+				7622B07321D76F36003BF0E7 /* Result.swift in Sources */,
+				7622B0A721DA21B6003BF0E7 /* ItinerariePresenter.swift in Sources */,
+				7620D6F421DBC03D006F5807 /* LegRouter.swift in Sources */,
+				7620D6D421DB9EE9006F5807 /* ItinerariesListRouter.swift in Sources */,
+				7622B09B21D916D9003BF0E7 /* PricingResponseParserJSON.swift in Sources */,
+				7620D6D621DB9EE9006F5807 /* ItinerariesListProtocols.swift in Sources */,
+				7620D6F721DBC03D006F5807 /* LegView.swift in Sources */,
+				7622B09621D915F9003BF0E7 /* Segment.swift in Sources */,
+				760A88A521DD3BF9001D0C4C /* UITabBarController+Helpers.swift in Sources */,
+				760A88A321DCF0DB001D0C4C /* UIStackView+Helpers.swift in Sources */,
+				7622B0AE21DA2234003BF0E7 /* Style.swift in Sources */,
+				7622B07921D76FA6003BF0E7 /* URL+HTTPParameters.swift in Sources */,
+				760E355D21DE011600825661 /* FlightsPoller.swift in Sources */,
+				7622B0B221DA5482003BF0E7 /* MVP.swift in Sources */,
+				7622B06321D76CD4003BF0E7 /* HTTPServiceRemote.swift in Sources */,
+				7622B06821D76D89003BF0E7 /* FlightRequestTasksBuilder.swift in Sources */,
+				7622B08F21D78BEF003BF0E7 /* Leg.swift in Sources */,
+				7622B0AB21DA21B6003BF0E7 /* ItinerarieView.swift in Sources */,
+				7622B09921D9167E003BF0E7 /* PricingResponseParser.swift in Sources */,
+				7620D6EC21DBA948006F5807 /* SkyScannerStyle.swift in Sources */,
+				7622B08821D788ED003BF0E7 /* Dictionary+HTTPParameters.swift in Sources */,
+				7620D6E221DBA3D6006F5807 /* SearchFlightsPresenter.swift in Sources */,
+				760E355F21DE02A200825661 /* UIView+Shadow.swift in Sources */,
+				7620D6E421DBA3D6006F5807 /* SearchFlightsViewController.swift in Sources */,
+				7622B07F21D783DF003BF0E7 /* Environment.swift in Sources */,
+				7622B08621D78568003BF0E7 /* GlobalServices.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7622B03621D76B67003BF0E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760E356621DE7E3A00825661 /* PricingResponseParserJSONTests.swift in Sources */,
+				760E356321DE7DCD00825661 /* HoursMinutesFormatterTests.swift in Sources */,
+				7622B03F21D76B67003BF0E7 /* SkyScannerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7622B04121D76B67003BF0E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7622B04A21D76B67003BF0E7 /* SkyScannerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7622B03C21D76B67003BF0E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7622B02521D76B66003BF0E7 /* SkyScanner */;
+			targetProxy = 7622B03B21D76B67003BF0E7 /* PBXContainerItemProxy */;
+		};
+		7622B04721D76B67003BF0E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7622B02521D76B66003BF0E7 /* SkyScanner */;
+			targetProxy = 7622B04621D76B67003BF0E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7622B03221D76B67003BF0E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7622B03321D76B67003BF0E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7622B04C21D76B67003BF0E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7622B04D21D76B67003BF0E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7622B04F21D76B67003BF0E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3QJ28VXP6;
+				INFOPLIST_FILE = SkyScanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pavelkatunin.SkyScanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7622B05021D76B67003BF0E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3QJ28VXP6;
+				INFOPLIST_FILE = SkyScanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pavelkatunin.SkyScanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7622B05221D76B67003BF0E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3QJ28VXP6;
+				INFOPLIST_FILE = SkyScannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pavelkatunin.SkyScannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyScanner.app/SkyScanner";
+			};
+			name = Debug;
+		};
+		7622B05321D76B67003BF0E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3QJ28VXP6;
+				INFOPLIST_FILE = SkyScannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pavelkatunin.SkyScannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyScanner.app/SkyScanner";
+			};
+			name = Release;
+		};
+		7622B05521D76B67003BF0E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3QJ28VXP6;
+				INFOPLIST_FILE = SkyScannerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pavelkatunin.SkyScannerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SkyScanner;
+			};
+			name = Debug;
+		};
+		7622B05621D76B67003BF0E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3QJ28VXP6;
+				INFOPLIST_FILE = SkyScannerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pavelkatunin.SkyScannerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SkyScanner;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7622B02121D76B66003BF0E7 /* Build configuration list for PBXProject "SkyScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7622B04C21D76B67003BF0E7 /* Debug */,
+				7622B04D21D76B67003BF0E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7622B04E21D76B67003BF0E7 /* Build configuration list for PBXNativeTarget "SkyScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7622B04F21D76B67003BF0E7 /* Debug */,
+				7622B05021D76B67003BF0E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7622B05121D76B67003BF0E7 /* Build configuration list for PBXNativeTarget "SkyScannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7622B05221D76B67003BF0E7 /* Debug */,
+				7622B05321D76B67003BF0E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7622B05421D76B67003BF0E7 /* Build configuration list for PBXNativeTarget "SkyScannerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7622B05521D76B67003BF0E7 /* Debug */,
+				7622B05621D76B67003BF0E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7622B01E21D76B66003BF0E7 /* Project object */;
+}
